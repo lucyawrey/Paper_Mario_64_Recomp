@@ -1,3 +1,11 @@
-RecompiledFuncs
-rom
+# Game Rom and ELF file
+*.elf
+*.z64
+
+# Build output directory
+build
+
+# N64Recomp Binaries
+N64Recomp
+RSPRecomp
 *.exe

@@ -2,9 +2,9 @@
 # Based on Zelda64Recomp's Majora's Mask configuration file: https://github.com/Zelda64Recomp/Zelda64Recomp/blob/dev/us.rev1.toml.
 
 [input]
-entrypoint = 0x80080000
+entrypoint = 0x80125C00
 # Paths are relative to the location of this config file.
-output_func_path = "RecompiledFuncs"
+output_func_path = "build/RecompiledFuncs"
 rom_file_path = "rom/paper_mario_usa_rev1.z64"
 elf_path = "rom/paper_mario_usa_rev1.elf"
 #relocatable_sections_path = "overlays.paper_mario_usa_rev1.txt"
