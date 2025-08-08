@@ -7,5 +7,8 @@ entrypoint = 0x80125C00
 output_func_path = "build/RecompiledFuncs"
 rom_file_path = "rom/paper_mario_usa_rev1.z64"
 elf_path = "rom/paper_mario_usa_rev1.elf"
-#relocatable_sections_path = "overlays.paper_mario_usa_rev1.txt"
-#symbols_file_path = "paper_mario_usa_rev1.syms.toml"
+
+[patches]
+stubs = []
+
+ignored = []

@@ -8,9 +8,9 @@ Clone the project recursively to include git submodules with `git clone --recurs
 2) Build the `N64Recomp` tool. To do so open a terminal to `lib/N64Recomp` and run the commands `cmake -S . -B build` plus `cmake --build build` to build the project binaries. They will be outputted to build/debug.
 3) Put a "Paper Mario NTSC 1.0" ROM in this project's `rom` directory with the name `paper_mario_usa_rev1.z64`.
 4) Build the `papermario` decompilation project at `lib/papermario` according to [these instructions](https://github.com/pmret/papermario/blob/main/SETUP.md) and put the resulting `ver/us/build/papermario.elf` file in this project's `rom` directory with the name `paper_mario_usa_rev1.elf`.
-5) From the root of this repository run `./lib/N64Recomp/build/N64Recomp paper_mario_usa_rev1.toml` to generate the decompiled C code.
+5) From the root of this repository run `./lib/N64Recomp/build/N64Recomp paper_mario_usa_rev1.toml` to generate the decompiled C code. This currently crashes partway through the function `iwa_01_MontyMoleAI_DrawRock_009110FC` with the error "No function found for jal target: 0x8006FE90".
 
-That's as far as I have gotten on the port so far. Next up is to set up a build script to recompile the C code into a native binary. We will need to link N64 Modern Runtime and RT64 in order for anything to work.
+That's as far as I have gotten on the port so far. Next up is to fix the bug when running N64Recomp. Then, it is to set up a build script to recompile the C code into a native binary. We will need to link N64 Modern Runtime and RT64 in order for anything to work.
 
 # Dependencies
 * [N64: Recompiled](https://github.com/N64Recomp/N64Recomp)
