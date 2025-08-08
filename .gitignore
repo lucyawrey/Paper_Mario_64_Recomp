@@ -4,8 +4,3 @@
 
 # Build output directory
 build
-
-# N64Recomp Binaries
-N64Recomp
-RSPRecomp
-*.exe
